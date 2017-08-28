@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,
+									   initial-scale=1.0,
+									   user-scalable=no" />
+		<title></title>
+		<style>
+			body {
+				background: #000;
+				background: url(img/2.jpg);
+			}
+			
+			#content {
+				position: relative;
+				
+				margin: 50px auto;
+				padding: 50px 20px;
+				width: 1400px;
+				height: 550px;
+			}
+			#content div {
+				position: absolute;
+				display: inline-block;
+			}
+			#content #show1 {
+				left: 300px;
+				top: 60px;
+				width: 700px;
+				height: 400px;
+			}
+			#content #show1 img {
+				width: 700px;
+				height: 410px;
+				border: 10px solid #fff;
+				box-shadow: 0 0 10px #FFFFFF;
+			}
+			#content #show2 {
+				right: 50px;
+				bottom: 0px;
+				width: 400px;
+				height: 200px;
+			}
+			#content #show2 img {
+				width: 400px;
+				height: 250px;
+				border: 10px solid #fff;
+				box-shadow: 0 0 10px #FFFFFF;
+			}
+			#content p {
+				position: absolute;
+				left: 50px;
+				display: inline-block;
+				
+				margin: 0;
+				padding: 10px;
+				width: 70px;
+				line-height: 25px;
+				font-size: 1.5rem;
+				
+				text-align: center;
+				font-weight: bold;
+				
+				color: #fff;
+				background: lightskyblue;
+			}
+			#content #show1 p {
+				bottom: -65px;
+			}
+			#content #show2 p {
+				bottom: -100px;
+			}
+			.active {
+				border-color: lightcoral;
+			}
+			input {
+				position: absolute;
+				top: 300px;
+				left: 1350px;
+				display: block;
+				z-index: 999;
+				
+				width: 100px;
+				height: 25px;
+				
+				font-size: 1rem;
+				font-weight: 700;
+				
+				color: #000;
+				background: #fff;
+				border: 3px solid #000;
+				border-radius: 10px;
+			}
+			#btn1 {
+				top: 225px;
+			}
+			#btn2 {
+				left: 1400px;
+			}
+		</style>
+	</head>
+	<body>
+		<input type="button" id="btn1" value="上一组"/>
+		<input type="button" id="btn2" value="下一组"/>
+		<div id="content">
+			<div id="show1">
+			</div>
+			<div id="show2">
+			</div>
+		</div>
+		<script src="js/index.js"></script>
+	</body>
+</html>
